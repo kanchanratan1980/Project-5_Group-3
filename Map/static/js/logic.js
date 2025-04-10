@@ -68,23 +68,33 @@ function getColor (listing_type) {
 listingsData.forEach(function(listing) {
     let lat = listing.Latitude;
     let lng = listing.Longitude;
-    let neighborhood = listing.Neighborhood;
-
-    // Check if the cluster for the neighborhood already exists; if not, create it
-    if (!neighborhoodClusters[neighborhood]) {
-        neighborhoodClusters[neighborhood] = L.markerClusterGroup();  // Create a new cluster group for the neighborhood
-    }
-
     let marker = L.circleMarker([lat,lng], styleInfo(listing))
         .bindPopup(`<h3>Neighborhood: ${listing.Neighborhood}</h3>
             <hr><p>Listing Type: ${listing.listing_type}</p>
             <p>Price: $${listing.Price}</p>`);
-
-    neighborhoodClusters[neighborhood].addLayer(marker);
-    allListings.addLayer(marker);
+    marker.addTo(allListings);
 });
+
+// listingsData.forEach(function(listing) {
+//     let lat = listing.Latitude;
+//     let lng = listing.Longitude;
+//     let neighborhood = listing.Neighborhood;
+
+//     // Check if the cluster for the neighborhood already exists; if not, create it
+//     if (!neighborhoodClusters[neighborhood]) {
+//         neighborhoodClusters[neighborhood] = L.markerClusterGroup();  // Create a new cluster group for the neighborhood
+//     }
+
+//     let marker = L.circleMarker([lat,lng], styleInfo(listing))
+//         .bindPopup(`<h3>Neighborhood: ${listing.Neighborhood}</h3>
+//             <hr><p>Listing Type: ${listing.listing_type}</p>
+//             <p>Price: $${listing.Price}</p>`);
+
+//     neighborhoodClusters[neighborhood].addLayer(marker);
+//     allListings.addLayer(marker);
+// });
 
 // Add the neighborhood clusters to the map
-Object.values(neighborhoodClusters).forEach(function(cluster) {
-    myMap.addLayer(cluster);
-});
+// Object.values(neighborhoodClusters).forEach(function(cluster) {
+//     myMap.addLayer(cluster);
+// });
