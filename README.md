@@ -31,6 +31,10 @@ This project aims to analyze Airbnb listing data, specifically for Denver, Color
 
 
 ## Key Findings
+![Average Potential Revenue by Neighborhood (100%, 70%, 50% Occupancy)](Graphs/avg_potential_revenue_neighborhood.png)
+![Top 10 Denver Neighborhoods by Average Home Price (2024)](Graphs/top_10_neighborhoods_price.png)
+!["Home Prices for Airbnb Revenue Chart Neighborhoods"](Graphs/home_prices.png)
+![Airbnb Revenue (70% Occ.) vs. Home Price by Neighborhood](Graphs/revenue_v_home_price.png)
 
 ## Methodology
 ### Data Proccessing and Visualization
