@@ -10,6 +10,7 @@ Date: April 2025
 - [Key Findings](#key-findings)
 - [Methodology](#methodology)
 - [Opportunities for Further Analysis](#opportunities-for-further-analysis)
+- [ERD](#erd)
 - [Resources](#resources)
 
 ## Project Description
@@ -21,14 +22,23 @@ This project aims to analyze Airbnb listing data, specifically for Denver, Color
 3. Which neighborhoods have the most Airbnb listings?
 
 ## Features
-- Map Visualization
-- Graphs
-- Sql Schemas
-- Data cleaning
+- **Map Visualization:** Interactive map showing the concentration of Airbnb listings across Denver neighborhoods.
+- **Data Visualizations:** Bar charts displaying potential revenue and average home prices by neighborhood to identify high-performing areas.
+- **ERD**: Entity Relationship Diagram (ERD)
+Visual overview of the data schema, illustrating how tables such as listings, neighborhoods, and pricing are related.
+
+
+## Map Visualization 
+Interactive map created using Leaflet allows users to explore Airbnb listing data in Denver on a large and small scale.
+#### Zoomed-out view showing overall listing density.
+![Map visualization](Map/Images/zoomed_out_map_visualization.png)
+
+#### Example of a single marker with popup info.
+![marker example](Map/Images/single_marker.png)
 
 ## Deployment
+### GitHub Pages Link
 - git hub pages link for the map
-
 
 ## Key Findings
 ![Average Potential Revenue by Neighborhood (100%, 70%, 50% Occupancy)](Graphs/avg_potential_revenue_neighborhood.png)
@@ -37,14 +47,16 @@ This project aims to analyze Airbnb listing data, specifically for Denver, Color
 ![Airbnb Revenue (70% Occ.) vs. Home Price by Neighborhood](Graphs/revenue_v_home_price.png)
 
 ## Methodology
-### Data Proccessing and Visualization
-**JavaScript Functions**:
+### Data Processing and Visualization
+**JavaScript Functions**: Used to render map layers, update visual elements based on user input, and integrate data with Leaflet for smooth map interactivity.
 
-**Leaflet**: The app uses Leaflet to create an interactive map where users can explore Airbnb data. 
+**Leaflet**: Used to create an interactive map that displays the distribution of Airbnb listings across Denver neighborhoods. 
 
-**Dask**:
+**Dask**: Utilized for efficient, scalable data processing to for handle large Airbnb and Zillow datasets during cleaning and transformation.
 
-**MatplotLib**:
+**MatplotLib**: Used to generate bar charts and other static visualizations that illustrate trends in potential revenue and average home prices by neighborhood.
+
+## ERD
 
 ## Opportunities for Further Analysis
 
@@ -55,5 +67,5 @@ This project aims to analyze Airbnb listing data, specifically for Denver, Color
 - **Zillow data:** https://www.zillow.com/research/data/ 
 - **Using csv files in javascript:** https://medium.com/@ryan_forrester_/read-csv-files-in-javascript-how-to-guide-8d0ac6df082a 
 - **Dask:** https://docs.dask.org/en/stable/ 
-- **ChatGPT:** Assisted with converting a .csv file to a .js file.
+- **ChatGPT:** Assisted with converting a .csv file to a .js file. Also used to troubleshoot code.
 
