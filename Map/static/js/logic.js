@@ -101,8 +101,9 @@ let street = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
   let overlayMaps = {
     "All Listings": allListings,
     "Entire home/apt": entireHome,
-    "Private room": privateRoom
-  };
+    "Private room": privateRoom,
+    "Marker Clusters": markerCluster
+};
   
   L.control.layers(baseMaps, overlayMaps, { collapsed: false }).addTo(myMap);
   
