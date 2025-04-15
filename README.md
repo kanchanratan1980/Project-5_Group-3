@@ -8,6 +8,7 @@ Date: April 2025
 - [Reasearch Questions to Answer](#research-questions-to-answer)
 - [Deployment](#deployment)
 - [Key Findings](#key-findings)
+- [Recommendation](#recommendation)
 - [Methodology](#methodology)
 - [Opportunities for Further Analysis](#opportunities-for-further-analysis)
 - [ERD](#erd)
@@ -20,6 +21,7 @@ This project aims to analyze Airbnb listing data, specifically for Denver, Color
 1. What is the potential income of an Airbnb compared to the average home cost by neighborhood?
 2. Which neighborhoods are the most profitable to host in?
 3. Which neighborhoods have the most Airbnb listings?
+4. How long will it take to make back your investment in each neighborhood?
 
 ## Features
 - **Map Visualization:** Interactive map showing the concentration of Airbnb listings across Denver neighborhoods.
@@ -42,9 +44,28 @@ Interactive map created using Leaflet allows users to explore Airbnb listing dat
 
 ## Key Findings
 ![Average Potential Revenue by Neighborhood (100%, 70%, 50% Occupancy)](Graphs/avg_potential_revenue_neighborhood.png)
+At a 70% occupancy rate, the potential gross earnings in these neighborhoods range between $35k - $60k per year. The neighborhoods with the highest revenue potential are Belcaro, University Park and Jefferson Park. 
+
 ![Top 10 Denver Neighborhoods by Average Home Price (2024)](Graphs/top_10_neighborhoods_price.png)
+While some of the most expensive neighborhoods are also in the top for Airbnb Revenue, for some of these neighborhoods the ROI is poor, as the entry cost is too high. <hr>
+
 !["Home Prices for Airbnb Revenue Chart Neighborhoods"](Graphs/home_prices.png)
+* Home prices of top ten airbnb grossing neighborhoods range from just over $400k to just over $1.5m
+* Home price is not directly correlated to the potential Airbnb revenue <hr>
+
+
 ![Airbnb Revenue (70% Occ.) vs. Home Price by Neighborhood](Graphs/revenue_v_home_price.png)
+Jefferson Park and Regis offer strong Airbnb revenue with lower home costs, making them great for ROI. Belcaro brings in the most revenue, but its high home prices make returns less efficient by comparison.
+
+![Payback Period by Neighborhood at 70% Occupancy](Graphs/payback_period.png)
+
+
+## Recommendation
+* We do not recommend targeting Belcaro, Hilltop or Cory - Merrill as the potential ROI is poor, or even losing money.
+* Jefferson Park and Regis are the best neighborhoods to pursue for best cost to return ratio. 
+* An investor would see the most rapid ROI in the College View - South Platte neighborhood, taking approximately 9.5 years to see the return. 
+* The same investor would take over 40 years to see their investment fully recovered in the Hilltop neighborhood. 
+
 
 ## Methodology
 ### Data Processing and Visualization
@@ -59,7 +80,7 @@ Interactive map created using Leaflet allows users to explore Airbnb listing dat
 ## ERD
 
 ## Opportunities for Further Analysis
-
+* Add home sales overlay to the map visualization
 
 ## Resources
 - **DU Bootcamp Module 15:** Utilized challenge files and class materials from the bootcamp.
