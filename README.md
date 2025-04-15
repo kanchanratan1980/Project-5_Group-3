@@ -43,19 +43,24 @@ Interactive map created using Leaflet allows users to explore Airbnb listing dat
 - git hub pages link for the map
 
 ## Key Findings
+**Top Revenue Neighborhoods**: At a 70% occupancy rate, the potential gross earnings in these neighborhoods range between $35k - $60k per year. The neighborhoods with the highest revenue potential are Belcaro, University Park and Jefferson Park.
+
 ![Average Potential Revenue by Neighborhood (100%, 70%, 50% Occupancy)](Graphs/avg_potential_revenue_neighborhood.png)
-At a 70% occupancy rate, the potential gross earnings in these neighborhoods range between $35k - $60k per year. The neighborhoods with the highest revenue potential are Belcaro, University Park and Jefferson Park. 
+
+**Most Expensive Neighborhoods by Home Price:** While some of the most expensive neighborhoods are also in the top for Airbnb Revenue, for some of these neighborhoods the ROI is poor, as the entry cost is too high.
 
 ![Top 10 Denver Neighborhoods by Average Home Price (2024)](Graphs/top_10_neighborhoods_price.png)
-While some of the most expensive neighborhoods are also in the top for Airbnb Revenue, for some of these neighborhoods the ROI is poor, as the entry cost is too high. <hr>
+
+**Home Prices in Top Revenue Neighborhoods:** Home prices of top ten airbnb grossing neighborhoods range from just over $400k to just over $1.5m. Home price is not directly correlated to the potential Airbnb revenue.
 
 !["Home Prices for Airbnb Revenue Chart Neighborhoods"](Graphs/home_prices.png)
-* Home prices of top ten airbnb grossing neighborhoods range from just over $400k to just over $1.5m
-* Home price is not directly correlated to the potential Airbnb revenue <hr>
 
+**Best Value for Investment:**
+Jefferson Park and Regis offer strong Airbnb revenue with lower home costs, making them great for ROI. Belcaro brings in the most revenue, but its high home prices make returns less efficient by comparison.
 
 ![Airbnb Revenue (70% Occ.) vs. Home Price by Neighborhood](Graphs/revenue_v_home_price.png)
-Jefferson Park and Regis offer strong Airbnb revenue with lower home costs, making them great for ROI. Belcaro brings in the most revenue, but its high home prices make returns less efficient by comparison.
+
+**Payback Period:** Ranges from ~9.5 years (College View – South Platte) to 40+ years (Hilltop).
 
 ![Payback Period by Neighborhood at 70% Occupancy](Graphs/payback_period.png)
 
