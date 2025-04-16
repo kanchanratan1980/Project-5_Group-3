@@ -4,11 +4,13 @@ Date: April 2025
 
 ## Table of Contents
 - [Project Description](#project-description)
-- [Features](#features)
 - [Reasearch Questions to Answer](#research-questions-to-answer)
+- [Features](#features)
+- [Deployment](#deployment)
 - [Key Findings](#key-findings)
 - [Recommendation](#recommendation)
 - [Methodology](#methodology)
+- [Ethical Considerations](#ethical-considerations)
 - [Opportunities for Further Analysis](#opportunities-for-further-analysis)
 - [ERD](#erd)
 - [Resources](#resources)
@@ -28,12 +30,22 @@ This project aims to analyze Airbnb listing data, specifically for Denver, Color
 - **ERD**: Entity Relationship Diagram (ERD)
 Visual overview of the data schema, illustrating how tables such as listings, neighborhoods, and pricing are related.
 
-
-## Map Visualization 
-### GitHub Pages Link
+## Deployment
+### GitHub Pages Link for the Map Visualization
 - [Map Link](https://iniirie.github.io/Project-5_Group-3/Map/)
 
+### Steps to Deploy Locally
+**1. Clone the Repository:**
+```bash
+git clone https://github.com/iniirie/Project-5_Group-3.git 
+```
+**2. Open the Project:**
+* Open the `airbnb.ipynb` Jupyter Notebook file to see the data cleaning and analysis.
+
+
+## Map Visualization 
 Interactive map created using Leaflet allows users to explore Airbnb listing data in Denver on a large and small scale.
+
 #### Zoomed-out view showing overall listing density.
 ![Map visualization](Map/Images/zoomed_out_map_visualization.png)
 
@@ -75,16 +87,20 @@ Jefferson Park and Regis offer strong Airbnb revenue with lower home costs, maki
 ### Data Processing and Visualization
 **JavaScript Functions**: Used to render map layers, update visual elements based on user input, and integrate data with Leaflet for smooth map interactivity.
 
-**Leaflet**: Used to create an interactive map that displays the distribution of Airbnb listings across Denver neighborhoods. 
+**Leaflet**: Used to create an interactive map that displays the distribution of Airbnb listings across Denver neighborhoods.
 
 **Dask**: Utilized for efficient, scalable data processing to for handle large Airbnb and Zillow datasets during cleaning and transformation.
 
 **MatplotLib**: Used to generate bar charts and other static visualizations that illustrate trends in potential revenue and average home prices by neighborhood.
 
+## Ethical Considerations
+All data used in this project was sourced from publicly available datasets, including Inside Airbnb and Zillow. These platforms publish data with the intent of supporting public awareness, research, and informed decision-making. We ensured proper citation and did not alter source data beyond necessary cleaning and formatting for analysis. While this project explores potential returns from Airbnb investments, the analysis is intended to inform responsible investment, not to promote unchecked short-term rental expansion.
+
 ## ERD
 ![ERD](Resources/ERD.png)
+
 ## Opportunities for Further Analysis
-* Add home sales overlay to the map visualization
+For further analysis on this project we would gather long-term rental data in these neighborhoods to see what the profit comparison is to short-term rentals. We would also break down all of the real estate pricing and potential revenue into specific home type categories. Additionaly, we would add an overlay to the map showing home sales in each neighborhood. Furthermore, finding out when the peak seasons are for Airbnb rentals and breaking the potential revenue down into monthly data would help an investor to see the full annual outlook. 
 
 ## Resources
 - **DU Bootcamp Module 15:** Utilized challenge files and class materials from the bootcamp.
@@ -93,4 +109,5 @@ Jefferson Park and Regis offer strong Airbnb revenue with lower home costs, maki
 - **Using csv files in javascript:** https://medium.com/@ryan_forrester_/read-csv-files-in-javascript-how-to-guide-8d0ac6df082a 
 - **Dask:** https://docs.dask.org/en/stable/ 
 - **ChatGPT:** Assisted with converting a .csv file to a .js file. Also used to troubleshoot code.
+- **ERD Creator**: https://dbdiagram.io/d 
 
