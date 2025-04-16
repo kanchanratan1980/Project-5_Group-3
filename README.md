@@ -82,7 +82,7 @@ Jefferson Park and Regis offer strong Airbnb revenue with lower home costs, maki
 **MatplotLib**: Used to generate bar charts and other static visualizations that illustrate trends in potential revenue and average home prices by neighborhood.
 
 ## ERD
-
+![ERD](Resources/ERD.png)
 ## Opportunities for Further Analysis
 * Add home sales overlay to the map visualization
 
