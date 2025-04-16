@@ -6,7 +6,6 @@ Date: April 2025
 - [Project Description](#project-description)
 - [Features](#features)
 - [Reasearch Questions to Answer](#research-questions-to-answer)
-- [Deployment](#deployment)
 - [Key Findings](#key-findings)
 - [Recommendation](#recommendation)
 - [Methodology](#methodology)
@@ -31,6 +30,9 @@ Visual overview of the data schema, illustrating how tables such as listings, ne
 
 
 ## Map Visualization 
+### GitHub Pages Link
+- [Map Link](https://iniirie.github.io/Project-5_Group-3/Map/)
+
 Interactive map created using Leaflet allows users to explore Airbnb listing data in Denver on a large and small scale.
 #### Zoomed-out view showing overall listing density.
 ![Map visualization](Map/Images/zoomed_out_map_visualization.png)
@@ -38,9 +40,6 @@ Interactive map created using Leaflet allows users to explore Airbnb listing dat
 #### Example of a single marker with popup info.
 ![marker example](Map/Images/single_marker.png)
 
-## Deployment
-### GitHub Pages Link
-- git hub pages link for the map
 
 ## Key Findings
 **Top Revenue Neighborhoods**: At a 70% occupancy rate, the potential gross earnings in these neighborhoods range between $35k - $60k per year. The neighborhoods with the highest revenue potential are Belcaro, University Park and Jefferson Park.
